@@ -1,6 +1,6 @@
 class PeopleController < ApplicationController
   def index
-    @people = Person.all
+    @people = Person.paginate(:page => params[:page], :per_page => 2)
   end
 
   def new
@@ -38,6 +38,6 @@ class PeopleController < ApplicationController
   end
 private
   def person_params
-    params.require(:person).permit(:first_name, :last_name, :email, :notes)
+    params.require(:person).permit(:first_name, :last_name, :email, :notes, :notes2)
   end
 end
