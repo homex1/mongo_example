@@ -1,3 +1,1 @@
-== RichOnRails.com MongoDB Example App
-
-See https://richonrails.com/articles/mongodb-and-rails for details.
+== MongoDB Example App
